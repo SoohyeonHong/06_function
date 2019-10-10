@@ -32,17 +32,19 @@ int main(int argc, char *argv[]) {
 	int x, y;
 	int output;
 	int output2;
+	
 	x = 2;
 	y = 5;
 	
 	output = sumTwo(x,y);
-	output2 = get_max(x,y);
 	
 	printf("x=2, y=5\n\n");
 	printf("sumTwo : %i\n", output);
 	printf("square x : %i\n", square(x));	
-	printf("square y : %i\n", square(y));	
-	printf("get_max : %i\n", output2);
+	printf("square y : %i\n", square(y));
+		
+	output = get_max(x,y); // renew output result 
+	printf("get_max : %i\n", output);
 	
 	
 	
