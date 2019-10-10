@@ -5,7 +5,7 @@
 
 void print_star()
 { 	
-	//함수 정의 
+	//define function 
 	
 	int i; 
 		
@@ -17,7 +17,7 @@ void print_star()
 
 int main(int argc, char *argv[]) {
 	
-	// 함수 호출  
+	// using function  
 	
 	print_star();
 	print_star();
