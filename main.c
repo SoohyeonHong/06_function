@@ -17,9 +17,6 @@ void print_star()
 
 int main(int argc, char *argv[]) {
 	
-	
-	int i; 
-	
 	// 함수 호출  
 	
 	print_star();
