@@ -1,11 +1,8 @@
-/*
-#01
-
-
 #include <stdio.h>
 #include <stdlib.h>
 
-
+// #01
+/*
 void print_star()
 { 	
 	//define function 
@@ -13,38 +10,32 @@ void print_star()
 	int i; 
 		
 	for( i = 0; i < 10; i++ ) 
-		printf("*"); 
-	
+		printf("*"); 	
 }
-
 
 int main(int argc, char *argv[]) {
 	
 	// using function  
-	
 	print_star();
 	print_star();
 	print_star();
-	
 	
 	return 0;
 }
 
 */
+
+
+
 // #02&03
 
-#include <stdio.h>
-#include <stdlib.h>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
+/*
 int sumTwo( int a, int b)
 {
-	/*
-	int output;
-	output = a + b;
-	return output;
-	*/
+	
+	//int output;
+	//output = a + b;
+	//return output;
 	
 	return a+b;
 }
@@ -77,11 +68,71 @@ int main(int argc, char *argv[]) {
 	printf("sumTwo : %i\n", output);
 	printf("square x : %i\n", square(x));	
 	printf("square y : %i\n", square(y));
-		
 	output = get_max(x,y); // renew output result 
 	printf("get_max : %i\n", output);
+	printf("\n\n");
 	
 	
+	
+*/
+
+
+
+// #04
+
+/*
+int square(int n);
+
+
+int main(int argc, char *argv[]) {
+	
+	int result;
+	result = square(5);
+	printf("%d", result);
+	
+}
+
+int square(int n)
+{
+	return (n*n);
+}
+
+*/
+
+// #07
+int CalCombination(int n, int r)// n,r
+{
+	int mo, ja;
+	mo = factorial(n-r)*factorial(r);
+	ja = factorial(n);  //함수 있다 가정하고 nfactorial 값 넣는 것
+	
+	return (ja/mo);
+}
+
+int factorial (int n)
+{
+	int res = 1;
+	int i;
+	for(i=1; i<=n; i++)
+	{
+		res = res * i	;
+	}
+	return res;
+}
+
+int main(void)
+{
+	int n;
+	int r;
+	int result;
+	
+	printf("Calculating Combination nCr. \nn should be larger than r.\ninput n and r : ");
+	scanf("%d %d", &n, &r);
+
+	result = CalCombination(n,r);
+	printf("Result of combination is %d\n", result);
+
 	
 	return 0;
 }
+
