@@ -99,6 +99,40 @@ int square(int n)
 
 */
 
+// #05
+
+int compute_sum(int n) 
+{ 
+	int i; 
+	int result = 0; 
+		for ( i=1; i<=n; i++) 
+		result += i; 
+	return result; 
+} 
+
+int main(void) 
+{ 
+	int sum; 
+	sum = compute_sum(100); 
+	printf(¡°sum = %d\n¡±, sum); 
+	
+	return 0;
+}
+
+// #06
+
+int main(void) 
+{ 
+	int i; 
+	int max=45; 
+	
+	srand( (unsigned) time(NULL) ); 
+		for ( i=0; i<6; i++ ) 
+		printf(¡°%d ¡±, 1+rand()%max; 
+	return 0;
+
+}
+
 // #07
 int CalCombination(int n, int r)// n,r
 {
@@ -126,7 +160,7 @@ int main(void)
 	int r;
 	int result;
 	
-	printf("Calculating Combination nCr. \nn should be larger than r.\ninput n and r : ");
+	printf("input n and r : ");
 	scanf("%d %d", &n, &r);
 
 	result = CalCombination(n,r);
