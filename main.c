@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 // #01
-/*
+
 void print_star()
 { 	
 	//define function 
@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 
 // #02&03
 
-/*
+
 int sumTwo( int a, int b)
 {
 	
@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
 
 // #04
 
-/*
+/
 int square(int n);
 
 
